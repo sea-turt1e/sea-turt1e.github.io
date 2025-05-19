@@ -224,7 +224,7 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		margin: 0 auto;
+		margin: 10px auto;
 		max-width: calc(100% - 50px);
 		width: 1200px;
 	}
@@ -2442,4 +2442,41 @@ input, select, textarea {
 						margin-top: 0;
 					}
 
+	}
+
+	.github-stats {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		gap: 1rem;
+	}
+	
+	.github-stats a {
+		flex: 1 1 300px; /* 300pxを最小幅にし、必要に応じて拡大 */
+		max-width: 600px;
+	}
+	
+	.github-stats img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.cert-badge {
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+	}
+	
+	.cert-badge a {
+		display: inline-block;
+		transition: transform 0.3s ease;
+	}
+	
+	.cert-badge a:hover {
+		transform: scale(1.1);
+	}
+	
+	.cert-badge img {
+		border-radius: 50%;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 	}
